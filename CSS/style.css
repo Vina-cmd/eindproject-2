@@ -1,0 +1,324 @@
+
+/* ========================================
+   1. ALGEMENE ACHTERGROND
+======================================== */
+
+body {
+    background-image: url("/images/tokyo-street.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 0;
+}
+
+html {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+
+    background-image: url("/images/tokyo-street.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+
+    background-color: #77775a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ========================================
+   2. INTRODUCTIE EN AFBEELDINGEN
+======================================== */
+
+/* Intro tekst met image */
+
+.intro {
+    background-color: #e9b1d0;
+    line-height: 1;
+    z-index: 2;
+}
+
+.main-portrait {
+    position: absolute;
+    bottom: 220px;
+    left: 50%;
+    transform: translate(50%);
+    width: 500px;
+    margin: 0;
+    z-index: 3;
+}
+
+.main-portrait img {
+    display: block;
+    width: 100%;
+    height: auto;
+    bottom: 220px;
+}
+
+.article-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-box {
+    box-sizing: 5px 6px 7px;
+    position: left;
+}
+
+
+/* ========================================
+   3. HEADER
+======================================== */
+
+.masthead {
+    position: relative;
+    width: 100%;
+    height: 190px;
+}
+
+.masthead h1 {
+    margin: 12px 1.5%;
+    color: #f8e747;
+    font-family: Impact, "Arial Narrow", sans-serif;
+    font-size: clamp(42px, 10vw, 115px);
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -4px;
+    white-space: nowrap;
+}
+
+
+/* ========================================
+   4. FOOTER
+======================================== */
+
+.footer {
+    position: relative;
+    z-index: 4;
+    padding: 15px 3%;
+    background: #e77fa9;
+}
+
+.footer p {
+    margin: 0;
+    padding: 10px 5px;
+    border: 10px solid white;
+    border-radius: 55px;
+    background: white;
+    color: #ed484b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.3rem, 8vw, 5.8rem);
+    font-weight: 1000;
+    line-height: 0.9;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   5. MAGAZINE — EERSTE BASISVERSIE
+======================================== */
+
+.magazine-page {
+    margin: 0;
+    padding: 20px;
+    background-color: #dedbd3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.magazine,
+.magazine * {
+    box-sizing: border-box;
+}
+
+
+
+.magazine .article h2 {
+    margin: 0 0 10px;
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 29px;
+    line-height: 0.95;
+}
+
+
+/* ========================================
+   8. ACHTERGROND VAN DE COVER
+======================================== */
+
+body.magazine-page {
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+
+    background-image: url("/images/tokyo-street.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ========================================
+   9. HOOFDINHOUD VAN DE COVER
+======================================== */
+
+.magazine-page .magazine {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 3% 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   10. COVERHEADER
+======================================== */
+
+.magazine-page .masthead {
+    position: relative;
+    width: 100%;
+    min-height: 190px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.magazine-page .masthead h1 {
+    margin: 12px 1.5%;
+
+    color: #f8e747;
+    font-family: Impact, "Arial Narrow", sans-serif;
+    font-size: clamp(60px, 12vw, 140px);
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -4px;
+
+    text-shadow: 4px 4px #111;
+}
+
+
+/* ========================================
+   11. COVER — NAVIGATIEBLOKKEN
+======================================== */
+
+.magazine-page .article {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 75%;
+    min-height: 140px;
+    margin: 30px 0;
+    padding: 15px;
+
+    box-sizing: border-box;
+    background-color: #e9b1d0;
+    border: 4px solid #111;
+}
+
+
+/* Eerste blok */
+
+.magazine-page .article-one {
+    margin-left: 3%;
+    transform: rotate(-2deg);
+}
+
+
+/* Tweede blok */
+
+.magazine-page .article-two {
+    width: 70%;
+    margin-left: auto;
+    margin-right: 3%;
+
+    background-color: #f8e747;
+    transform: rotate(2deg);
+}
+
+
+/* Derde blok */
+
+.magazine-page .article-three {
+    width: 65%;
+    margin-left: 8%;
+
+    background-color: #77b98c;
+    transform: rotate(-1deg);
+}
+
+
+/* ========================================
+   12. COVER — LINKS
+======================================== */
+
+.magazine-page .article nav {
+    width: 100%;
+    text-align: center;
+}
+
+.magazine-page .article a {
+    display: block;
+    color: #111;
+    text-decoration: none;
+}
+
+.magazine-page .article h2 {
+    margin: 0;
+
+    font-family: Impact, "Arial Narrow", sans-serif;
+    font-size: clamp(25px, 5vw, 48px);
+    font-weight: 900;
+    line-height: 0.95;
+    overflow-wrap: anywhere;
+}
+
+
+/* Hover-effect */
+
+.magazine-page .article a:hover {
+    color: #ed484b;
+}
+
+
+/* ========================================
+   13. COVER — FOOTER
+======================================== */
+
+.magazine-page .footer {
+    position: relative;
+    margin-top: 45px;
+    padding: 15px 3%;
+
+    background-color: #e77fa9;
+}
+
+.magazine-page .footer p {
+    margin: 0;
+    padding: 10px 5px;
+
+    border: 6px solid white;
+    border-radius: 55px;
+    background-color: white;
+
+    color: #ed484b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(25px, 5vw, 65px);
+    font-weight: 900;
+    line-height: 0.95;
+    text-align: center;
+    text-transform: uppercase;
+}
+
